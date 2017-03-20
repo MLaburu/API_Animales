@@ -8,6 +8,7 @@ import javax.swing.ImageIcon;
 
 public class Ahorcado extends Observable {
 
+	//prueba commit
 	private String solucion;
 	private String[] ahorcado;
 	private ImageIcon imagen;
