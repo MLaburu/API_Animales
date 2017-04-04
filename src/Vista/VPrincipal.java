@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import Modelo.GestorAhorcado;
+import Modelo.GestorAnimaleccion;
 
 import javax.swing.JButton;
 
@@ -46,6 +47,10 @@ public class VPrincipal extends JFrame {
 		
 		JButton btnAhorcado = new JButton("Ahorcado de animalitos");
 		contentPane.add(btnAhorcado, BorderLayout.CENTER);
+		
+		
+		JButton btnAnimaleccion = new JButton("Animaleccion");
+		contentPane.add(btnAnimaleccion, BorderLayout.SOUTH);
 		btnAhorcado.addActionListener(new ActionListener() {
 			
 			@Override
@@ -54,6 +59,16 @@ public class VPrincipal extends JFrame {
 				GestorAhorcado.getGestorAhorcado().initAhorcado();
 
 				VAhorcado.main(null);
+				
+			}
+		});
+		
+		btnAnimaleccion.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				GestorAnimaleccion.getGestorAnimaleccion().initAnnimaleccion();
+				VAnimaleccion.main(null);
 				
 			}
 		});

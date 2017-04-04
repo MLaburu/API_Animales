@@ -62,6 +62,7 @@ public class VAhFin extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				GestorAhorcado.getGestorAhorcado().initAhorcado();
+				VAhorcado.main(null);
 				dispose();
 				
 			}
