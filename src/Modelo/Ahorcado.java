@@ -14,7 +14,7 @@ public class Ahorcado extends Observable {
 	private ImageIcon imagen;
 	private int intentos;
 	private static Ahorcado miAhorcado = new Ahorcado();
-	
+	//prueba
 	private Ahorcado(){
 		
 	}
